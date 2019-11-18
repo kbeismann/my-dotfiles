@@ -62,7 +62,7 @@ output * background ~/gitdir/wallpapers/images/o3323171.jpg fill
 
 ## VARIABLES
 
-## Logo key. Use Mod1 for Alt.
+## Logo key. Use Mod1 for Alt and Mod4 for the Windows key.
 set $mod Mod4
 
 ## Home row direction keys.
