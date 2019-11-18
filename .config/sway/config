@@ -157,6 +157,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     bindsym $mod+8 workspace 8
     bindsym $mod+9 workspace 9
     bindsym $mod+0 workspace 10
+
     # move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace 1
     bindsym $mod+Shift+2 move container to workspace 2
@@ -303,8 +304,8 @@ bar {
         colors {
         separator           $base00
         background 		    $base00
-        statusline		    $base03
-        focused_workspace	$base00 $base00 $base04
+        statusline		    $base04
+        focused_workspace	$base00 $base00 $base08
         active_workspace 	$base00 $base00 $base07
         inactive_workspace 	$base00 $base00 $base02
         urgent_workspace 	$base00 $base00 $base08
