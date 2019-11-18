@@ -94,7 +94,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     bindsym $mod+d exec $menu
 
     ## Start browser.
-    bindsym $mod+b exec wayland_firefox
+    bindsym $mod+b exec "MOZ_ENABLE_WAYLAND=1 firefox --new-window"
 
     ## Start Emacs in user folder.
     bindsym $mod+u exec emacsclient -c ./
