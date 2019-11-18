@@ -1,0 +1,344 @@
+# -*- conf -*-
+
+### Sway configuration file
+
+# Author: Karsten Beismann
+# Filename: config
+# Created: 2019-08-30T13:25:08
+
+
+## Commentary:
+
+# Sway configuration file.  Probably full of legacy options since it the file
+# is based on an outdated.
+
+# The default configuration can be found here:
+# https://github.com/swaywm/sway/blob/master/config.in
+
+
+## To-Do:
+
+# * Clean up settings.
+# * Use Waybar.
+
+
+## FONT
+
+# font pango:xos4 Terminus 14px
+# font pango:DejaVu Sans Mono 10
+# font pango:Inconsolata 14px
+# font -*-dina-medium-r-*-*-9-*-*-*-*-*-*-*
+font pango:Dina 12px
+# font pango:Hack 13px
+# font -*-terminus-medium-r-normal-*-14-*-*-*-*-*-*-*
+
+
+## WINDOW OPTIONS
+
+# gaps inner 0                      # Set gaps between windows.
+default_border none
+# default_border pixel 0
+# new_window pixel 10             # This deactivates the top bar of each window.
+# focus_follows_mouse no          # Deactivate focus follows mouse.
+
+
+## SCREEN: NOTEBOOK
+
+output * background ~/gitdir/wallpapers/images/o3018474.jpg fill
+
+
+## SCREEN: DESKTOP
+
+# Define first and second monitor.
+
+# set $firstMonitor DVI-I-1
+# set $secondMonitor DVI-I-2
+
+# Define resolution and background.
+
+# output $firstMonitor res 1920x1080 pos 0,0 bg /home/admin/gdrive/unsorted/pics/o2390612.gif fill
+# output $secondMonitor res 1920x1080 pos 1920,0 bg /home/admin/gdrive/stuff/pics/Forest-Minimal-Download-Wallpaper-HD.jpg fill
+
+
+## VARIABLES
+
+## Logo key. Use Mod1 for Alt.
+set $mod Mod4
+
+## Home row direction keys.
+set $left j
+set $down k
+set $up i
+set $right l
+
+## Your preferred terminal emulator.
+set $term termite
+
+# Your preferred application launcher
+# Note: it's recommended that you pass the final command to sway
+set $menu dmenu_path | dmenu | xargs swaymsg exec --
+# set $menu dmenu_path | dmenu | xargs swaymsg exec
+
+
+### Key bindings
+#
+# Basics:
+#
+    # Start a terminal
+    bindsym $mod+Return exec $term
+
+    # Kill focused window
+    bindsym $mod+Shift+q kill
+
+    # Start your launcher
+    bindsym $mod+d exec $menu
+
+    ## Start browser.
+    bindsym $mod+b exec wayland_firefox
+
+    ## Start Emacs in user folder.
+    bindsym $mod+u exec emacsclient -c ./
+
+    ## Start Emacs in /todo.org.
+    bindsym $mod+t exec emacs "~/gitdir/orgdir/todo.org"
+
+    ## Start mu4e in Emacs.
+    bindsym $mod+p exec emacs -f mu4e
+
+    ## Open news reader in Firefox.
+    bindsym $mod+n exec wayland_news_reader
+
+    ## Open github.com/kbeismann in Firefox.
+    bindsym $mod+g exec wayland_my_github
+
+
+    # Drag floating windows by holding down $mod and left mouse button.
+    # Resize them with right mouse button + $mod.
+    # Despite the name, also works for non-floating windows.
+    # Change normal to inverse to use left mouse button for resizing and right
+    # mouse button for dragging.
+    floating_modifier $mod normal
+
+    # reload the configuration file
+    bindsym $mod+Shift+c reload
+
+    # exit sway (logs you out of your wayland session)
+    # exit sway (logs you out of your Wayland session)
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you want to exit sway? ' -b 'Exit sway' 'swaymsg exit'
+    # bindsym $mod+Shift+e exit # Old version.
+
+#
+# Moving around:
+#
+    # Move your focus around with $mod+[h|j|k|l], like vim
+    bindsym $mod+$left focus left
+    bindsym $mod+$down focus down
+    bindsym $mod+$up focus up
+    bindsym $mod+$right focus right
+
+    # _move_ the focused window with the same, but add Shift
+    bindsym $mod+Shift+$left move left
+    bindsym $mod+Shift+$down move down
+    bindsym $mod+Shift+$up move up
+    bindsym $mod+Shift+$right move right
+
+
+#
+# Workspaces:
+#
+    # switch to workspace
+    bindsym $mod+1 workspace 1
+    bindsym $mod+2 workspace 2
+    bindsym $mod+3 workspace 3
+    bindsym $mod+4 workspace 4
+    bindsym $mod+5 workspace 5
+    bindsym $mod+6 workspace 6
+    bindsym $mod+7 workspace 7
+    bindsym $mod+8 workspace 8
+    bindsym $mod+9 workspace 9
+    bindsym $mod+0 workspace 10
+    # move focused container to workspace
+    bindsym $mod+Shift+1 move container to workspace 1
+    bindsym $mod+Shift+2 move container to workspace 2
+    bindsym $mod+Shift+3 move container to workspace 3
+    bindsym $mod+Shift+4 move container to workspace 4
+    bindsym $mod+Shift+5 move container to workspace 5
+    bindsym $mod+Shift+6 move container to workspace 6
+    bindsym $mod+Shift+7 move container to workspace 7
+    bindsym $mod+Shift+8 move container to workspace 8
+    bindsym $mod+Shift+9 move container to workspace 9
+    bindsym $mod+Shift+0 move container to workspace 10
+    # Note: workspaces can have any name you want, not just numbers.
+    # We just use 1-10 as the default.
+
+
+# Workspace at startup for multiple monitors.
+
+# workspace 1 output $firstMonitor
+# workspace 9 output $secondMonitor
+
+
+#
+# Layout stuff:
+#
+    # You can "split" the current object of your focus with
+    # $mod+b or $mod+v, for horizontal and vertical splits
+    # respectively.
+    bindsym $mod+h splith
+    bindsym $mod+v splitv
+
+    # Switch the current container between different layout styles
+    bindsym $mod+s layout stacking
+    bindsym $mod+w layout tabbed
+    bindsym $mod+e layout toggle split
+
+    # Make the current focus fullscreen
+    bindsym $mod+f fullscreen
+
+    # Toggle the current focus between tiling and floating mode
+    bindsym $mod+Shift+space floating toggle
+
+    # Swap focus between the tiling area and the floating area
+    bindsym $mod+space focus mode_toggle
+
+    # move focus to the parent container
+    bindsym $mod+a focus parent
+#
+# Scratchpad:
+#
+    # Sway has a "scratchpad", which is a bag of holding for windows.
+    # You can send windows there and get them back later.
+
+    # Move the currently focused window to the scratchpad
+    bindsym $mod+Shift+minus move scratchpad
+
+    # Show the next scratchpad window or hide the focused scratchpad window.
+    # If there are multiple scratchpad windows, this command cycles through them.
+    bindsym $mod+minus scratchpad show
+
+
+#
+# Resizing containers:
+#
+mode "resize" {
+    # left will shrink the containers width
+    # right will grow the containers width
+    # up will shrink the containers height
+    # down will grow the containers height
+    bindsym $left resize shrink width 10px
+    bindsym $down resize grow height 10px
+    bindsym $up resize shrink height 10px
+    bindsym $right resize grow width 10px
+
+    # ditto, with arrow keys
+    bindsym Left resize shrink width 10px
+    bindsym Down resize grow height 10px
+    bindsym Up resize shrink height 10px
+    bindsym Right resize grow width 10px
+
+    # return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+## Versatile settings for volume and brightness.
+
+bindsym $mod+period exec pactl set-sink-volume $(pacmd list-sinks |awk '/* index:/{print $3}') +5%
+bindsym $mod+comma exec pactl set-sink-volume $(pacmd list-sinks |awk '/* index:/{print $3}') -5%
+bindsym $mod+m exec pactl set-sink-mute $(pacmd list-sinks |awk '/* index:/{print $3}') toggle
+# bindsym $mod+, exec dsplight down 5
+# bindsym $mod+. exec dsplight up 5
+
+
+# COLOR THEMES
+
+## Transparency.
+set $transparent #00000000
+
+
+## FOR ZENBURN, BASE00 AND BASE03 HAVE BEEN CHANGED.
+
+## Base16 Zenburn
+# Author: elnawe
+#
+# You can use these variables anywhere in the i3 configuration file.
+
+# Lock screen color.
+set $base00_lock 383838
+
+# Dark background to lighter foreground.
+set $base00 #383838
+set $base01 #404040
+set $base02 #606060
+set $base03 #6f6f6f
+set $base04 #808080
+set $base05 #dcdccc
+set $base06 #c0c0c0
+set $base07 #ffffff
+
+# Colors.
+set $base08 #dca3a3
+set $base09 #dfaf8f
+set $base0A #e0cf9f
+set $base0B #5f7f5f
+set $base0C #93e0e3
+set $base0D #7cb8bb
+set $base0E #dc8cc3
+set $base0F #000000
+
+# <color_class>         <border>        <background>   <text>   <indicator>     <child_border>
+client.focused 		    $base00         $base00        $base04  $base00	        $base00
+client.focused_inactive $base00         $base00        $base02  $base00	        $base00
+client.unfocused 	    $base00         $base00        $base02  $base00	        $base00
+client.urgent 		    $base00         $base00        $base08  $base00	        $base00
+
+## Remember to add the rest of your configuration
+
+bar {
+    ## remember to add your favourite status bar, i.e.,
+        status_command i3status -c ~/.i3status.conf
+        # status_command custom_bar
+	position top
+        colors {
+        separator           $base00
+        background 		    $base00
+        statusline		    $base03
+        focused_workspace	$base00 $base00 $base04
+        active_workspace 	$base00 $base00 $base07
+        inactive_workspace 	$base00 $base00 $base02
+        urgent_workspace 	$base00 $base00 $base08
+    }
+}
+
+
+## Lock screen
+
+# bindsym $mod+y exec swaylock -i ~/gitdir/wallpapers/fern-wallpapers-27854-6568932.jpg --scaling fill # Image version.
+bindsym $mod+y exec swaylock -c $base00_lock
+
+
+## Idle configuration
+
+exec swayidle -w \
+         timeout        300 'swaylock -f -c 383838' \
+         timeout        400 'swaymsg "output * dpms off"' \
+         resume            'swaymsg "output * dpms on"' \
+         before-sleep      'swaylock -f -c 383838'
+
+# This will lock your screen after 300 seconds of inactivity, then turn off
+# your displays after another 300 seconds, and turn your screens back on when
+# resumed. It will also lock your screen before your computer goes to sleep.
+
+
+## Startup
+
+## Force floating for all new terminals.
+# for_window [title="$term"] border pixel 0 ; resize set 288 180
+# for_window [title="$term"] border pixel 1 ; floating enable ; resize set 288 180; move down 20; move right 30
+
+# exec swaymsg "workspace BROWSER; exec firefox --new-window"
+# exec swaymsg "workspace MAIL; exec emacs -e mu4e"
+# exec swaymsg "workspace TODO; exec emacs ~/gitdir/orgdir/todo.org"
+
+include @sysconfdir@/sway/config.d/*
