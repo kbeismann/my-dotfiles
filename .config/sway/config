@@ -9,8 +9,8 @@
 
 ## Commentary:
 
-# Sway configuration file.  Probably full of legacy options since it the file
-# is based on an outdated.
+# My Sway configuration file.  Probably full of legacy options since the file
+# it is based on is outdated.
 
 # The default configuration can be found here:
 # https://github.com/swaywm/sway/blob/master/config.in
@@ -19,13 +19,13 @@
 ## To-Do:
 
 # * Clean up settings.
-# * Use Waybar.
+# * Use Waybar?
 
 
 ## FONT
 
-font pango:Dina 12px
-# font pango:xos4 Terminus 14px
+# font pango:Dina 12px
+font pango:xos4 Terminus 14px
 # font pango:DejaVu Sans Mono 10
 # font pango:Inconsolata 14px
 # font -*-dina-medium-r-*-*-9-*-*-*-*-*-*-*
@@ -44,23 +44,23 @@ default_border none
 
 ## SCREEN: NOTEBOOK
 
-output * background ~/gitdir/wallpapers/images/o3323171.jpg fill
+# output * background ~/gitdir/wallpapers/images/o3323171.jpg fill
 
 
 ## SCREEN: DESKTOP
 
 # Define first and second monitor.
 
-# set $firstMonitor DVI-I-1
-# set $secondMonitor DVI-I-2
+set $firstMonitor DVI-I-1
+set $secondMonitor DVI-I-2
 
 # Define resolution and background.
 
-# output $firstMonitor res 1920x1080 pos 0,0 bg /home/admin/gdrive/unsorted/pics/o2390612.gif fill
-# output $secondMonitor res 1920x1080 pos 1920,0 bg /home/admin/gdrive/stuff/pics/Forest-Minimal-Download-Wallpaper-HD.jpg fill
+output $firstMonitor res 1920x1080 pos 0,0 bg ~/gitdir/wallpapers/images/o3321682.jpg fill
+output $secondMonitor res 1920x1080 pos 1920,0 bg ~/gitdir/wallpapers/images/o3018474.jpg fill
 
 
-## VARIABLES
+## BASIC VARIABLES
 
 ## Logo key. Use Mod1 for Alt and Mod4 for the Windows key.
 set $mod Mod4
@@ -77,7 +77,6 @@ set $term termite
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
-# set $menu dmenu_path | dmenu | xargs swaymsg exec
 
 
 ### Key bindings
@@ -342,4 +341,6 @@ exec swayidle -w \
 # exec swaymsg "workspace MAIL; exec emacs -e mu4e"
 # exec swaymsg "workspace TODO; exec emacs ~/gitdir/orgdir/todo.org"
 
-include @sysconfdir@/sway/config.d/*
+# xwayland disable
+
+include /etc/sway/config.d/*
