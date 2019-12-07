@@ -1,0 +1,118 @@
+### Termite configuration file
+
+# Author: Karsten Beismann
+# Filename: config
+# Created: 2019-11-18T13:04:49
+
+
+## Commentary:
+
+# My Termite configuration file.
+
+
+## To-do:
+
+# * TODO: Remove outdated Termite options.
+
+
+## Code:
+
+[options]
+
+# Font.
+# font = Dina, regular, 12px
+font = Terminus 12px            # Works with terminus-font-orb.
+# font = Misc Tamsyn 12
+# font = -raster-Dina-normal-r-normal-normal-10-75-96-96-c-*-iso8859-1
+# font = -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+# font = Inconsolata 14px
+# font = DejaVu Sans Mono 10
+# font = Ubuntu Mono 11
+# font = -*-terminus-medium-r-normal-*-14-*-*-*-*-*-*-*
+# font = Hack 12px
+# font = -*-dina-medium-r-*-*-11-*-*-*-*-*-*-*
+
+# Misc.
+allow_bold = true
+dynamic_title = true
+clickable_url = true
+browser = firefox
+
+# Cursor and mouse.
+mouse_autohide = true
+cursor_blink = system           # "system", "on" or "off".
+cursor_shape = block            # "block", "underline" or "ibeam".
+
+# Bell.
+urgent_on_bell = false
+audible_bell = false
+
+# Hinting, size hints for the window, and antialias.
+size_hints = true
+hinting = true
+antialias = true
+
+# Hide links that are no longer valid in url select overlay mode.
+filter_unmatched_urls = true
+
+# Scrolling.
+scroll_on_output = true
+scroll_on_keystroke = true
+scrollback_lines = 100000
+
+
+[colors]
+
+## Transparent background.
+background = rgba(0, 0, 0, .7)
+
+
+# Base16 Zenburn color scheme.
+# Author: elnawe
+
+# background          = #383838
+
+foreground      = #dcdccc
+foreground_bold = #c0c0c0
+
+cursor = #dca3a3
+# cursor              = #c0c0c0
+
+
+# Black, Gray, Silver, White.
+color0  = #3f3f3f
+color8  = #4f4f4f
+color7  = #dcdccc
+color15 = #ffffff
+
+# Red.
+color1  = #dca3a3
+color9  = #dca3a3
+
+# Green.
+color2  = #5f7f5f
+color10 = #5f7f5f
+
+# Yellow.
+color3  = #e0cf9f
+color11 = #e0cf9f
+
+# Blue.
+color4  = #7cb8bb
+color12 = #7cb8bb
+
+# Purple.
+color5  = #dc8cc3
+color13 = #dc8cc3
+
+# Teal.
+color6  = #93e0e3
+color14 = #93e0e3
+
+# Extra colors.
+color16 = #dfaf8f
+color17 = #000000
+color18 = #404040
+color19 = #606060
+color20 = #808080
+color21 = #c0c0c0
