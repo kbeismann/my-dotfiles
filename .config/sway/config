@@ -24,8 +24,9 @@
 
 ## FONT
 
-# font pango:Dina 12px
-font pango:Terminus 12px
+# font Dina 10px
+# font pango:Dina 11px
+font Terminus 14px
 # font pango:DejaVu Sans Mono 10
 # font pango:Inconsolata 14px
 # font -*-dina-medium-r-*-*-9-*-*-*-*-*-*-*

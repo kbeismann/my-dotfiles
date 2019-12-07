@@ -20,15 +20,17 @@
 [options]
 
 # Font.
-# font = Dina, regular, 12px
-font = Terminus 12px            # Works with terminus-font-orb.
+# font = Dina 11px
+font = Terminus, 14px
+# font = "-*-terminus-*-*-*-*-12-*-*-*-*-*-*-*"
+# font = Terminus, 14px             # Works with terminus-font-otb.
 # font = Misc Tamsyn 12
 # font = -raster-Dina-normal-r-normal-normal-10-75-96-96-c-*-iso8859-1
 # font = -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
 # font = Inconsolata 14px
 # font = DejaVu Sans Mono 10
 # font = Ubuntu Mono 11
-# font = -*-terminus-medium-r-normal-*-14-*-*-*-*-*-*-*
+# font = -*-terminus-medium-r-normal-*-12-*-*-*-*-*-*-*
 # font = Hack 12px
 # font = -*-dina-medium-r-*-*-11-*-*-*-*-*-*-*
 
