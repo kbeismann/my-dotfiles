@@ -56,8 +56,8 @@ set $secondMonitor DVI-I-2
 
 # Define resolution and background.
 
-output $firstMonitor res 1920x1080 pos 0,0 bg ~/gitdir/wallpapers/images/o3321682.jpg fill
-output $secondMonitor res 1920x1080 pos 1920,0 bg ~/gitdir/wallpapers/images/o3018474.jpg fill
+output $firstMonitor res 1920x1080 pos 1920,0 bg ~/gitdir/wallpapers/images/o3321682.jpg fill
+output $secondMonitor res 1920x1080 pos 0,0 bg ~/gitdir/wallpapers/images/o3018474.jpg fill
 
 
 ## BASIC VARIABLES
@@ -172,10 +172,11 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     # We just use 1-10 as the default.
 
 
-# Workspace at startup for multiple monitors.
+# Workspace at startup for multiple monitors.  The workspace numbers depend on
+# the screen setup.
 
-# workspace 1 output $firstMonitor
-# workspace 9 output $secondMonitor
+workspace 6 output $firstMonitor
+workspace 1 output $secondMonitor
 
 
 #
