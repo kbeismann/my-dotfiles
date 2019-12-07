@@ -93,7 +93,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     bindsym $mod+d exec $menu
 
     ## Start browser.
-    bindsym $mod+b exec "MOZ_ENABLE_WAYLAND=1 firefox --new-window"
+    bindsym $mod+b exec "firefox --new-window"
 
     ## Start Emacs in user folder.
     bindsym $mod+u exec emacsclient -c ./
@@ -105,10 +105,10 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     bindsym $mod+p exec emacs -f mu4e
 
     ## Open news reader in Firefox.
-    bindsym $mod+n exec wayland_news_reader
+    bindsym $mod+n exec news_reader
 
     ## Open github.com/kbeismann in Firefox.
-    bindsym $mod+g exec wayland_my_github
+    bindsym $mod+g exec my_github
 
 
     # Drag floating windows by holding down $mod and left mouse button.
