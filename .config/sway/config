@@ -289,7 +289,7 @@ set $base0E #dc8cc3
 set $base0F #000000
 
 # <color_class>         <border>        <background>   <text>   <indicator>     <child_border>
-client.focused 		    $base00         $base00        $base04  $base00	        $base00
+client.focused 		    $base00         $base00        $base08  $base00	        $base00
 client.focused_inactive $base00         $base00        $base02  $base00	        $base00
 client.unfocused 	    $base00         $base00        $base02  $base00	        $base00
 client.urgent 		    $base00         $base00        $base08  $base00	        $base00
