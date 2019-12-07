@@ -35,32 +35,32 @@ font = Terminus, 14px
 # font = -*-dina-medium-r-*-*-11-*-*-*-*-*-*-*
 
 # Misc.
-allow_bold = true
+allow_bold    = true
 dynamic_title = true
 clickable_url = true
-browser = firefox
+browser       = firefox
 
 # Cursor and mouse.
 mouse_autohide = true
-cursor_blink = system           # "system", "on" or "off".
-cursor_shape = block            # "block", "underline" or "ibeam".
+cursor_blink   = system           # "system", "on" or "off".
+cursor_shape   = block            # "block", "underline" or "ibeam".
 
 # Bell.
 urgent_on_bell = false
-audible_bell = false
+audible_bell   = false
 
 # Hinting, size hints for the window, and antialias.
 size_hints = true
-hinting = true
-antialias = true
+hinting    = true
+antialias  = true
 
 # Hide links that are no longer valid in url select overlay mode.
 filter_unmatched_urls = true
 
 # Scrolling.
-scroll_on_output = true
+scroll_on_output    = true
 scroll_on_keystroke = true
-scrollback_lines = 100000
+scrollback_lines    = 100000
 
 
 [colors]
