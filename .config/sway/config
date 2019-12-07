@@ -306,7 +306,7 @@ bar {
         background 		    $base00
         statusline		    $base04
         focused_workspace	$base00 $base00 $base08
-        active_workspace 	$base00 $base00 $base07
+        active_workspace 	$base00 $base00 $base05
         inactive_workspace 	$base00 $base00 $base02
         urgent_workspace 	$base00 $base00 $base08
     }
