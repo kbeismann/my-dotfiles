@@ -343,6 +343,8 @@ exec swayidle -w \
 # exec swaymsg "workspace MAIL; exec emacs -e mu4e"
 # exec swaymsg "workspace TODO; exec emacs ~/gitdir/orgdir/todo.org"
 
+exec pulseaudio --daemon        # Not always necessary.
+
 # xwayland disable
 
 include /etc/sway/config.d/*
