@@ -27,10 +27,11 @@
 # font Dina 10px
 # font pango:Dina 11px
 font Terminus 14px
-# font pango:DejaVu Sans Mono 10
+# font DejaVu Sans Mono 14px
 # font pango:Inconsolata 14px
 # font -*-dina-medium-r-*-*-9-*-*-*-*-*-*-*
 # font pango:Hack 13px
+# font ProggyCleanTT 16px
 # font -*-terminus-medium-r-normal-*-14-*-*-*-*-*-*-*
 
 
