@@ -20,8 +20,8 @@
 [options]
 
 # Font.
-# font = Dina 11px
-font = Terminus, 14px
+font = Dina 13px
+# font = Terminus, 14px
 # font = "-*-terminus-*-*-*-*-12-*-*-*-*-*-*-*"
 # font = Terminus, 14px             # Works with terminus-font-otb.
 # font = Misc Tamsyn 12
