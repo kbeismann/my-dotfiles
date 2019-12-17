@@ -58,7 +58,7 @@ set $secondMonitor DVI-I-2
 
 # Define resolution and background.
 
-output $firstMonitor res 1920x1080 pos 1920,0 bg ~/gitdir/wallpapers/images/o3321682.jpg fill
+output $firstMonitor res 1920x1080 pos 1920,0 bg ~/gitdir/wallpapers/images/o2833899.jpg fill
 output $secondMonitor res 1920x1080 pos 0,0 bg ~/gitdir/wallpapers/images/o3018474.jpg fill
 
 
