@@ -62,6 +62,20 @@ output $secondMonitor   res 1920x1080 pos 1920,0 bg ~/gitdir/wallpapers/images/o
 output $firstMonitor    res 1920x1080 pos 3840,0 bg ~/gitdir/wallpapers/images/o843900.jpg fill
 
 
+# Workspace at startup for multiple monitors.  The workspace numbers depend on
+# the screen setup.
+
+workspace 1 output $thirdMonitor
+workspace 2 output $thirdMonitor
+workspace 3 output $thirdMonitor
+workspace 4 output $secondMonitor
+workspace 5 output $secondMonitor
+workspace 6 output $secondMonitor
+workspace 7 output $firstMonitor
+workspace 8 output $firstMonitor
+workspace 9 output $firstMonitor
+workspace 0 output $firstMonitor
+
 ## BASIC VARIABLES
 
 ## Logo key. Use Mod1 for Alt and Mod4 for the Windows key.
@@ -172,21 +186,6 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     bindsym $mod+Shift+0 move container to workspace 10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
-
-
-# Workspace at startup for multiple monitors.  The workspace numbers depend on
-# the screen setup.
-
-workspace 6 output $firstMonitor
-workspace 7 output $firstMonitor
-workspace 8 output $firstMonitor
-workspace 9 output $firstMonitor
-workspace 0 output $firstMonitor
-workspace 1 output $secondMonitor
-workspace 2 output $secondMonitor
-workspace 3 output $secondMonitor
-workspace 4 output $secondMonitor
-workspace 5 output $secondMonitor
 
 
 #
