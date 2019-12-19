@@ -71,7 +71,7 @@ workspace 3 output $thirdMonitor
 workspace 4 output $secondMonitor
 workspace 5 output $secondMonitor
 workspace 6 output $secondMonitor
-workspace 7 output $firstMonitor
+workspace 7 output $secondMonitor
 workspace 8 output $firstMonitor
 workspace 9 output $firstMonitor
 workspace 0 output $firstMonitor
