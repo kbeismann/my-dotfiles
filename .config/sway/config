@@ -112,13 +112,16 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     bindsym $mod+b exec "firefox --new-window"
 
     ## Start Emacs in user folder.
-    bindsym $mod+u exec emacsclient -c ./
+    bindsym $mod+o exec emacsclient -c "./gitdir/orgdir/notes.org"
 
-    ## Start Emacs in /todo.org.
-    bindsym $mod+t exec emacs "~/gitdir/orgdir/todo.org"
+    ## Start Emacs in user folder.
+    bindsym $mod+u exec emacsclient -c ./
 
     ## Start mu4e in Emacs.
     bindsym $mod+p exec emacs -f mu4e
+
+    ## Start Emacs in /todo.org.
+    bindsym $mod+i exec emacs "~/gitdir/orgdir/todo.org"
 
     ## Open news reader in Firefox.
     bindsym $mod+n exec news_reader
