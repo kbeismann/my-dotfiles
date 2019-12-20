@@ -52,29 +52,29 @@ default_border none
 ## SCREEN: DESKTOP
 
 # Define first and second monitor.
-set $firstMonitor DVI-I-1
+set $thirdMonitor DVI-I-1
 set $secondMonitor HDMI-A-1
-set $thirdMonitor DVI-I-2
+set $firstMonitor DVI-I-2
 
 # Define resolution and background.
-output $firstMonitor    res 1920x1080 pos 3840,0 bg ~/gitdir/wallpapers/images/o843900.jpg fill
+output $thirdMonitor    res 1920x1080 pos 3840,0 bg ~/gitdir/wallpapers/images/o843900.jpg fill
 output $secondMonitor   res 1920x1080 pos 1920,0 bg ~/gitdir/wallpapers/images/o92253.jpg fill
-output $thirdMonitor    res 1920x1080 pos 0,0    bg ~/gitdir/wallpapers/images/o3018474.jpg fill
+output $firstMonitor    res 1920x1080 pos 0,0    bg ~/gitdir/wallpapers/images/o3018474.jpg fill
 
 
 # Workspace at startup for multiple monitors.  The workspace numbers depend on
 # the screen setup.
 
-workspace 1 output $thirdMonitor
-workspace 2 output $thirdMonitor
-workspace 3 output $thirdMonitor
+workspace 1 output $firstMonitor
+workspace 2 output $firstMonitor
+workspace 3 output $firstMonitor
 workspace 4 output $secondMonitor
 workspace 5 output $secondMonitor
 workspace 6 output $secondMonitor
 workspace 7 output $secondMonitor
-workspace 8 output $firstMonitor
-workspace 9 output $firstMonitor
-workspace 0 output $firstMonitor
+workspace 8 output $thirdMonitor
+workspace 9 output $thirdMonitor
+workspace 0 output $thirdMonitor
 
 ## BASIC VARIABLES
 
