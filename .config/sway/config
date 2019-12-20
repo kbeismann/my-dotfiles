@@ -52,9 +52,9 @@ default_border none
 ## SCREEN: DESKTOP
 
 # Define first and second monitor.
-set $firstMonitor HDMI-A-1
+set $firstMonitor DVI-I-1
+set $secondMonitor HDMI-A-1
 set $thirdMonitor DVI-I-2
-set $secondMonitor DVI-I-1
 
 # Define resolution and background.
 output $thirdMonitor    res 1920x1080 pos 0,0    bg ~/gitdir/wallpapers/images/o3018474.jpg fill
