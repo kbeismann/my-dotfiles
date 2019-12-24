@@ -135,7 +135,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     bindsym $mod+n exec news_reader
 
     ## Open github.com/kbeismann in Firefox.
-    bindsym $mod+g exec my_github
+    bindsym $mod+g exec firefox --new-window "https://github.com/kbeismann"
 
 
     # Drag floating windows by holding down $mod and left mouse button.
