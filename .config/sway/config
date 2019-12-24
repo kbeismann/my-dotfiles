@@ -50,7 +50,7 @@ default_border none
 focus_follows_mouse no
 
 # Mouse should not follow focus.  Possible values: output|container|none.
-mouse_warping output
+mouse_warping none
 
 # This deactivates the top bar of each window.
 # default_border pixel 0
