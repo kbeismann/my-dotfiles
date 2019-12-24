@@ -44,11 +44,21 @@ font Dina 13px
 
 ## WINDOW OPTIONS
 
-# gaps inner 0                      # Set gaps between windows.
 default_border none
+
+# Deactivate focus follows mouse.
+focus_follows_mouse no
+
+# Mouse should not follow focus.  Possible values: output|container|none.
+mouse_warping output
+
+# This deactivates the top bar of each window.
 # default_border pixel 0
-# new_window pixel 10             # This deactivates the top bar of each window.
-# focus_follows_mouse no          # Deactivate focus follows mouse.
+
+# new_window pixel 10
+
+# Set gaps between windows.
+# gaps inner 0
 
 
 ## SCREEN: NOTEBOOK
