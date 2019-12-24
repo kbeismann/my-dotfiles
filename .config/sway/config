@@ -136,7 +136,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     bindsym $mod+t exec emacsclient -c "~/gitdir/orgdir/todo.org"
 
     ## Start Emacs with EMMS streams.
-    bindsym $mod+u exec emacsclient -f emms-streams
+    bindsym $mod+u exec emacs -f emms-streams
 
     ## Start mu4e in Emacs.
     bindsym $mod+p exec emacs -f mu4e
