@@ -343,7 +343,7 @@ bindsym $mod+y exec swaylock -c $base00_lock
 
 exec swayidle -w \
          timeout        300 'swaylock -f -c 383838' \
-         timeout        400 'swaymsg "output * dpms off"' \
+         timeout        360 'swaymsg "output * dpms off"' \
          resume             'swaymsg "output * dpms on"' \
          before-sleep       'swaylock -f -c 383838'
 
