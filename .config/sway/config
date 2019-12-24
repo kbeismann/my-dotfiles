@@ -117,7 +117,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     bindsym $mod+d exec $menu
 
     ## Start browser.
-    bindsym $mod+b exec "firefox --new-window"
+    bindsym $mod+b exec firefox --new-window
 
     ## Start Emacs in user folder.
     bindsym $mod+o exec emacsclient -c "./gitdir/orgdir/notes.org"
