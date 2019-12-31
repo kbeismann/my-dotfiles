@@ -370,8 +370,9 @@ exec emacs --daemon
 # for_window [title="$term"] border pixel 0 ; resize set 288 180
 # for_window [title="$term"] border pixel 1 ; floating enable ; resize set 288 180; move down 20; move right 30
 
-# exec swaymsg "workspace BROWSER; exec firefox --new-window"
-# exec swaymsg "workspace MAIL; exec emacs -e mu4e"
+exec swaymsg "workspace 1; exec emacs -e emms-streams"
+exec swaymsg "workspace 10; exec firefox"
+# exec swaymsg "workspace MAIL; exec emcs -e mu4e"
 # exec swaymsg "workspace TODO; exec emacs ~/gitdir/orgdir/todo.org"
 
 # exec pulseaudio --daemon        # Not always necessary.
