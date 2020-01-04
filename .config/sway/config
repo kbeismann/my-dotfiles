@@ -1,5 +1,4 @@
 # -*- conf -*-
-
 ### Sway configuration file
 
 # Author: Karsten Beismann
@@ -13,7 +12,6 @@
 # based on an outdated default.
 
 # The default configuration can be found here:
-
 # https://github.com/swaywm/sway/blob/master/config.in
 
 # or under
@@ -28,6 +26,11 @@
 # * TODO: Clean up settings.
 # * TODO: Use Waybar?
 
+
+## Sources:
+
+# * URL: https://github.com/Robinhuett/dotfiles/blob/master/.config/sway/config
+# * URL: https://gitlab.com/rigopoui/dotfiles-and-themes/blob/master/laptop/.config/sway/config
 
 ## FONT
 
@@ -80,7 +83,8 @@ output $firstMonitor    res 1920x1080 pos 0,0    bg ~/gitdir/wallpapers/images/o
 
 
 # Workspace at startup for multiple monitors.  The workspace numbers depend on
-# the screen setup.
+# the screen setup.  Note: workspaces can have any name you want, not just
+# numbers.  We just use 1-10 as the default.
 
 workspace 1 output $firstMonitor
 workspace 2 output $firstMonitor
@@ -182,7 +186,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 #
 # Workspaces:
 #
-    # switch to workspace
+    # Switch to workspace.
     bindsym $mod+1 workspace 1
     bindsym $mod+2 workspace 2
     bindsym $mod+3 workspace 3
