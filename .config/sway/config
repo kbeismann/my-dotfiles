@@ -217,7 +217,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     bindsym $mod+F7 workspace F7
     bindsym $mod+F8 workspace F8
     bindsym $mod+F9 workspace F9
-    bindsym $mod+F0 workspace F10
+    bindsym $mod+F10 workspace F10
 
     # Move focused container to workspace.
     bindsym $mod+Shift+1 move container to workspace 1
@@ -240,7 +240,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     bindsym $mod+Shift+F7 move container to workspace F7
     bindsym $mod+Shift+F8 move container to workspace F8
     bindsym $mod+Shift+F9 move container to workspace F9
-    bindsym $mod+Shift+F0 move container to workspace F10
+    bindsym $mod+Shift+F10 move container to workspace F10
 
 
 #
