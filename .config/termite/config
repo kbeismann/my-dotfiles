@@ -59,7 +59,7 @@ antialias  = true
 filter_unmatched_urls = true
 
 # Scrolling.
-scroll_on_output    = true
+scroll_on_output    = false
 scroll_on_keystroke = true
 scrollback_lines    = 100000
 
