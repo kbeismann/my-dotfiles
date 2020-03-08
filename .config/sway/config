@@ -163,9 +163,6 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     ## Open github.com/kbeismann in Firefox.
     bindsym $mod+g exec firefox --new-window "https://github.com/kbeismann"
 
-    ## Open Steam.
-    bindsym $mod+s exec steam
-
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.  Despite the name, also
