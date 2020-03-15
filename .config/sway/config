@@ -78,9 +78,9 @@ set $secondMonitor HDMI-A-1
 set $firstMonitor DVI-I-2
 
 # Define resolution and background.
-# output $thirdMonitor    res 1920x1080 pos 3840,0 bg ~/gitdir/wallpapers/images/o597484.jpg fill
-# output $secondMonitor   res 1920x1080 pos 1920,0 bg ~/gitdir/wallpapers/images/o92253.jpg fill
-# output $firstMonitor    res 1920x1080 pos 0,0    bg ~/gitdir/wallpapers/images/o2833899.jpg fill
+# output $thirdMonitor    res 1920x1080 pos 3840,0 bg ~/gitdir/my-git/wallpapers/images/o597484.jpg fill
+# output $secondMonitor   res 1920x1080 pos 1920,0 bg ~/gitdir/my-git/wallpapers/images/o92253.jpg fill
+# output $firstMonitor    res 1920x1080 pos 0,0    bg ~/gitdir/my-git/wallpapers/images/o2833899.jpg fill
 
 
 # Workspace at startup for multiple monitors.  The workspace numbers depend on
@@ -146,10 +146,10 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     bindsym $mod+b exec firefox --new-window
 
     ## Start Emacs in user folder.
-    bindsym $mod+o exec emacsclient -c "./gitdir/orgdir/notes.org"
+    bindsym $mod+o exec emacsclient -c "./gitdir/my-git/orgdir/notes.org"
 
     ## Start Emacs in /todo.org.
-    bindsym $mod+t exec emacsclient -c "~/gitdir/orgdir/todo.org"
+    bindsym $mod+t exec emacsclient -c "~/gitdir/my-git/orgdir/todo.org"
 
     ## Start Emacs with EMMS streams.
     bindsym $mod+u exec emacs -f emms-streams
