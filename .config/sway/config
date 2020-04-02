@@ -146,10 +146,10 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     bindsym $mod+b exec firefox --new-window
 
     ## Start Emacs in user folder.
-    bindsym $mod+o exec emacsclient -c "./gitdir/my-git/orgdir/notes.org"
+    bindsym $mod+o exec emacs "./gitdir/my-git/orgdir/notes.org"
 
     ## Start Emacs in /todo.org.
-    bindsym $mod+t exec emacsclient -c "~/gitdir/my-git/orgdir/todo.org"
+    bindsym $mod+t exec emacs "~/gitdir/my-git/orgdir/todo.org"
 
     ## Start Emacs with EMMS streams.
     bindsym $mod+u exec emacs -f emms-streams
@@ -305,6 +305,7 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+
 bindsym $mod+r mode "resize"
 
 ## Versatile settings for volume and brightness.
