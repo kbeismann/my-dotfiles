@@ -43,9 +43,9 @@ clickable_url = true
 browser       = firefox
 
 # Cursor and mouse.
-mouse_autohide = true
-cursor_blink   = system           # "system", "on" or "off".
-cursor_shape   = block            # "block", "underline" or "ibeam".
+mouse_autohide = true           # Don't show the mouse pointer when typing.
+cursor_blink   = system         # "system", "on" or "off".
+cursor_shape   = block          # "block", "underline" or "ibeam".
 
 # Bell.
 urgent_on_bell = false
