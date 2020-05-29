@@ -67,7 +67,7 @@ mouse_warping none
 
 ## SCREEN: NOTEBOOK
 
-output * background ~/gitdir/my-git/wallpapers/images/o3431027.jpg fill
+# output * background ~/gitdir/my-git/wallpapers/images/o3431027.jpg fill
 
 
 ## SCREEN: DESKTOP
@@ -78,9 +78,9 @@ set $secondMonitor HDMI-A-1
 set $firstMonitor DVI-I-2
 
 # Define resolution and background.
-# output $thirdMonitor    res 1920x1080 pos 3840,0 bg ~/gitdir/my-git/wallpapers/images/o597484.jpg fill
-# output $secondMonitor   res 1920x1080 pos 1920,0 bg ~/gitdir/my-git/wallpapers/images/o92253.jpg fill
-# output $firstMonitor    res 1920x1080 pos 0,0    bg ~/gitdir/my-git/wallpapers/images/o2833899.jpg fill
+output $thirdMonitor    res 1920x1080 pos 3840,0 bg ~/gitdir/my-git/wallpapers/images/o3445963.jpg fill
+output $secondMonitor   res 1920x1080 pos 1920,0 bg ~/gitdir/my-git/wallpapers/images/o3431027.jpg fill
+output $firstMonitor    res 1920x1080 pos 0,0    bg ~/gitdir/my-git/wallpapers/images/o3430470.jpg fill
 
 
 # Workspace at startup for multiple monitors.  The workspace numbers depend on
