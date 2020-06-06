@@ -387,13 +387,13 @@ bindsym $mod+y exec swaylock -c $base00_lock
 ## Idle configuration
 
 exec swayidle -w \
-         timeout        600 'swaylock -f -c 383838' \
-         timeout        660 'swaymsg "output * dpms off"' \
+         timeout        300 'swaylock -f -c 383838' \
+         timeout        360 'swaymsg "output * dpms off"' \
          resume             'swaymsg "output * dpms on"' \
          before-sleep       'swaylock -f -c 383838'
 
 # This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
+# your displays after another 60 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 
 
