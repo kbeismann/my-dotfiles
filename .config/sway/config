@@ -68,7 +68,7 @@ mouse_warping none
 
 ## SCREEN: NOTEBOOK
 
-output * background ~/gitdir/my-git/wallpapers/images/o3497676.jpg fill
+output * background ~/gitdir/my-git/wallpapers/img/o3497676.jpg fill
 
 
 ## SCREEN: DESKTOP
