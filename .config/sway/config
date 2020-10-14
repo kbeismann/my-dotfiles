@@ -420,10 +420,8 @@ exec swaymsg "workspace 8; exec emacs ~/gitdir/my-git/orgdir/notes.org"
 # exec swaymsg "workspace 6; exec conda activate cfm-dev && emacs ./gitdir/comparing-forecasting-methods/doc/"
 # exec swaymsg "workspace 5; exec conda activate cfm-dev && emacs ./gitdir/comparing-forecasting-methods/bib/"
 # exec swaymsg "workspace 1; exec termite"
-
 # exec swaymsg "workspace 1; exec emacs -e emms-streams"
 # exec swaymsg "workspace MAIL; exec emcs -e mu4e"
-# exec swaymsg "workspace TODO; exec emacs ~/gitdir/orgdir/todo.org"
 
 # exec pulseaudio --daemon        # Not always necessary.
 
