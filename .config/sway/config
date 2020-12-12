@@ -49,7 +49,7 @@ font Dina 13px
 
 ## WINDOW OPTIONS
 
-default_border none
+default_border pixel 5
 
 # Deactivate focus follows mouse.
 focus_follows_mouse no
