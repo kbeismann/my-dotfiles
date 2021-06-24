@@ -147,13 +147,10 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
     bindsym $mod+b exec firefox --new-window
 
     ## Start Emacs in user folder.
-    bindsym $mod+o exec emacs "./gitdir/my-git/orgdir/notes.org"
-
-    ## Start Emacs in /todo.org.  Currently not in use.
-    # bindsym $mod+t exec emacs "~/gitdir/my-git/orgdir/todo.org"
+    bindsym $mod+o exec ~/gitdir/my-git/emacs/src/emacs ~/gitdir/my-git/my-notes/notes.org
 
     ## Start Emacs with EMMS streams.
-    bindsym $mod+u exec emacs -f emms-streams
+    bindsym $mod+u exec ~/gitdir/my-git/emacs/src/emacs -f emms-streams
 
     ## Open news reader in Firefox.
     bindsym $mod+n exec news_reader
@@ -397,7 +394,7 @@ exec swayidle -w \
 
 ## Startup
 
-exec emacs --daemon
+exec ~/gitdir/my-git/emacs/src/emacs --daemon
 
 ## Force floating for all new terminals.
 # for_window [title="$term"] border pixel 0 ; resize set 288 180
@@ -405,7 +402,7 @@ exec emacs --daemon
 
 exec swaymsg "workspace 10; exec firefox"
 exec swaymsg "workspace 10; exec news_reader"
-exec swaymsg "workspace 8; exec emacs ~/gitdir/my-git/orgdir/notes.org"
+exec swaymsg "workspace 8; exec ~/gitdir/my-git/emacs/src/emacs ~/gitdir/my-git/my-notes/notes.org"
 exec swaymsg "workspace 9; exec telegram-desktop"
 exec swaymsg "workspace 9; exec tutanota-desktop"
 exec swaymsg "workspace 9; exec discord"
