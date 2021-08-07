@@ -1,0 +1,17 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+window:
+  dynamic_title: true
+font:
+  normal:
+    family: dina
+cursor:
+  style:
+    shape: Block
+    blinking: On
+mouse:
+  hide_when_typing: true
+scrolling:
+  history: 10000
+import:
+ - ~/gitdir/my-git/base16-alacritty/colors/base16-zenburn.yml
