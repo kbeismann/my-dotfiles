@@ -399,8 +399,6 @@ exec swayidle -w \
 
 ## Startup
 
-exec emacs --daemon
-
 ## Force floating for all new terminals.
 # for_window [title="$term"] border pixel 0 ; resize set 288 180
 # for_window [title="$term"] border pixel 1 ; floating enable ; resize set 288 180; move down 20; move right 30
