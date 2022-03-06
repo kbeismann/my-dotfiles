@@ -404,7 +404,6 @@ exec swayidle -w \
 # for_window [title="$term"] border pixel 1 ; floating enable ; resize set 288 180; move down 20; move right 30
 
 exec swaymsg "workspace 10; exec firefox"
-exec swaymsg "workspace 10; exec news_reader"
 exec swaymsg "workspace 8; exec emacs ~/gitdir/my-git/my-notes/notes.org"
 exec swaymsg "workspace 9; exec telegram-desktop"
 exec swaymsg "workspace 9; exec tutanota-desktop"
