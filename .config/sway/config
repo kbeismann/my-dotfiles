@@ -91,24 +91,24 @@ output $firstMonitor    res 1920x1080 pos 0,0    bg ~/gitdir/my-git/my-wallpaper
 workspace 1 output $firstMonitor
 workspace 2 output $firstMonitor
 workspace 3 output $firstMonitor
-workspace 4 output $secondMonitor
-workspace 5 output $secondMonitor
+workspace 4 output $firstMonitor
+workspace 5 output $firstMonitor
 workspace 6 output $secondMonitor
 workspace 7 output $secondMonitor
-workspace 8 output $thirdMonitor
-workspace 9 output $thirdMonitor
-workspace 10 output $thirdMonitor
+workspace 8 output $secondMonitor
+workspace 9 output $secondMonitor
+workspace 10 output $secondMonitor
 
 workspace F1 output $firstMonitor
 workspace F2 output $firstMonitor
 workspace F3 output $firstMonitor
-workspace F4 output $secondMonitor
-workspace F5 output $secondMonitor
+workspace F4 output $firstMonitor
+workspace F5 output $firstMonitor
 workspace F6 output $secondMonitor
 workspace F7 output $secondMonitor
-workspace F8 output $thirdMonitor
-workspace F9 output $thirdMonitor
-workspace F10 output $thirdMonitor
+workspace F8 output $secondMonitor
+workspace F9 output $secondMonitor
+workspace F10 output $secondMonitor
 
 
 ## BASIC VARIABLES
