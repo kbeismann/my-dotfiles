@@ -312,7 +312,7 @@ bindsym $mod+m exec pactl set-sink-mute $(pacmd list-sinks |awk '/* index:/{prin
 # bindsym $mod+. exec dsplight up 5
 
 # Take a screenshot of the whole screen and save it in ~/screenshots.
-bindsym print exec grim -t jpeg ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).jpg
+bindsym print exec grim -t jpeg ~/Screenshots/$(date +%Y-%m-%d_%H-%m-%s).jpg
 # Take a Screenshot of the selected region and save it in ~/screenshots.
 bindsym $mod+print exec grim -t jpeg -g "$(slurp)" ~/Screenshots/$(date +%Y-%m-%d_%H-%m-%s).jpg
 
