@@ -303,11 +303,10 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-## Versatile settings for volume and brightness.
-
-bindsym $mod+period exec pactl set-sink-volume $(pacmd list-sinks |awk '/* index:/{print $3}') +5%
-bindsym $mod+comma exec pactl set-sink-volume $(pacmd list-sinks |awk '/* index:/{print $3}') -5%
-bindsym $mod+m exec pactl set-sink-mute $(pacmd list-sinks |awk '/* index:/{print $3}') toggle
+# Source: https://github.com/francma/wob
+bindsym $mod+period exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym $mod+comma exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym $mod+m exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 # bindsym $mod+, exec dsplight down 5
 # bindsym $mod+. exec dsplight up 5
 
