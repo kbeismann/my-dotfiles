@@ -73,15 +73,15 @@ output * background ~/gitdir/my-git/my-wallpapers/img/o3717631.jpg fill
 
 ## SCREEN: DESKTOP
 
-# Define first and second monitor.
-set $thirdMonitor DVI-I-1
+# Define monitors.  Check GPU connections with `swaymsg -t get_outputs`.
+set $firstMonitor DP-2
 set $secondMonitor HDMI-A-1
-set $firstMonitor DVI-I-2
+set $thirdMonitor DP-3
 
 # Define resolution and background.
-output $thirdMonitor    res 1920x1080 pos 3840,0 bg ~/gitdir/my-git/my-wallpapers/img/o3431339.jpg fill
-output $secondMonitor   res 1920x1080 pos 1920,0 bg ~/gitdir/my-git/my-wallpapers/img/o3431027.jpg fill
 output $firstMonitor    res 1920x1080 pos 0,0    bg ~/gitdir/my-git/my-wallpapers/img/o3497676.jpg fill
+output $secondMonitor   res 1920x1080 pos 1920,0 bg ~/gitdir/my-git/my-wallpapers/img/o3431027.jpg fill
+output $thirdMonitor    res 1920x1080 pos 3840,0 bg ~/gitdir/my-git/my-wallpapers/img/o3431339.jpg fill
 
 
 # Workspace at startup for multiple monitors.  The workspace numbers depend on
