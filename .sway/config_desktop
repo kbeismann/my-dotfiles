@@ -65,50 +65,43 @@ mouse_warping none
 # Set gaps between windows.
 # gaps inner 0
 
-
-## SCREEN: NOTEBOOK
-
-output * background ~/gitdir/my-git/my-wallpapers/img/o3717631.jpg fill
-
-
 ## SCREEN: DESKTOP
 
 # Define monitors.  Check GPU connections with `swaymsg -t get_outputs`.
-set $firstMonitor DP-2
-set $secondMonitor HDMI-A-1
-set $thirdMonitor DP-3
+set $leftMonitor HDMI-A-1
+set $rightMonitor DP-1
+# set $rightMonitor DP-2
 
 # Define resolution and background.
-output $firstMonitor    res 1920x1080 pos 0,0    bg ~/gitdir/my-git/my-wallpapers/img/o3497676.jpg fill
-output $secondMonitor   res 1920x1080 pos 1920,0 bg ~/gitdir/my-git/my-wallpapers/img/o3431027.jpg fill
-output $thirdMonitor    res 1920x1080 pos 3840,0 bg ~/gitdir/my-git/my-wallpapers/img/o3431339.jpg fill
-
+output $leftMonitor res 1920x1080 pos 0,0 bg ~/gitdir/my-git/my-wallpapers/img/o3431027.jpg fill
+output $rightMonitor res 1920x1080 pos 1920,0 bg ~/gitdir/my-git/my-wallpapers/img/o3710495.png fill
+# output $thirdMonitor    res 1920x1080 pos 3840,0 bg ~/gitdir/my-git/my-wallpapers/img/o3431339.jpg fill
 
 # Workspace at startup for multiple monitors.  The workspace numbers depend on
 # the screen setup.  Note: workspaces can have any name you want, not just
 # numbers.  We just use 1-10 as the default.
 
-workspace 1 output $firstMonitor
-workspace 2 output $firstMonitor
-workspace 3 output $firstMonitor
-workspace 4 output $firstMonitor
-workspace 5 output $firstMonitor
-workspace 6 output $secondMonitor
-workspace 7 output $secondMonitor
-workspace 8 output $secondMonitor
-workspace 9 output $secondMonitor
-workspace 10 output $secondMonitor
+workspace 1  output $leftMonitor
+workspace 2  output $leftMonitor
+workspace 3  output $leftMonitor
+workspace 4  output $leftMonitor
+workspace 5  output $leftMonitor
+workspace 6  output $rightMonitor
+workspace 7  output $rightMonitor
+workspace 8  output $rightMonitor
+workspace 9  output $rightMonitor
+workspace 10 output $rightMonitor
 
-workspace F1 output $firstMonitor
-workspace F2 output $firstMonitor
-workspace F3 output $firstMonitor
-workspace F4 output $firstMonitor
-workspace F5 output $firstMonitor
-workspace F6 output $secondMonitor
-workspace F7 output $secondMonitor
-workspace F8 output $secondMonitor
-workspace F9 output $secondMonitor
-workspace F10 output $secondMonitor
+workspace F1  output $leftMonitor
+workspace F2  output $leftMonitor
+workspace F3  output $leftMonitor
+workspace F4  output $leftMonitor
+workspace F5  output $leftMonitor
+workspace F6  output $rightMonitor
+workspace F7  output $rightMonitor
+workspace F8  output $rightMonitor
+workspace F9  output $rightMonitor
+workspace F10 output $rightMonitor
 
 
 ## BASIC VARIABLES
