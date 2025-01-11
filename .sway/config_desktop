@@ -394,11 +394,13 @@ exec swayidle -w \
 # for_window [title="$term"] border pixel 1 ; floating enable ; resize set 288 180; move down 20; move right 30
 
 exec swaymsg "workspace 10; exec firefox";
-exec sleep 3s && exec swaymsg "workspace 9; exec tidal-hifi";
-exec sleep 3s && exec swaymsg "workspace 3; exec telegram-desktop";
-exec sleep 3s && exec swaymsg "workspace 3; exec tutanota-desktop --password-store='gnome-libsecret'";
-exec sleep 3s && exec swaymsg "workspace 3; exec discord";
-exec sleep 10s && exec swaymsg "workspace 2; exec emacs ~/gitdir/my-git/my-notes/notes.org";
+exec sleep 5s && exec swaymsg "workspace 9; exec tidal-hifi";
+exec sleep 10s && exec swaymsg "workspace 8; exec telegram-desktop";
+exec sleep 10s && exec swaymsg "workspace 8; exec tutanota-desktop --password-store='gnome-libsecret'";
+exec sleep 10s && exec swaymsg "workspace 8; exec discord";
+exec sleep 10s && exec swaymsg "workspace 8; exec firefox --new-window https://web.whatsapp.com/";
+exec sleep 15s && exec swaymsg "workspace 1; exec emacs ~/gitdir/my-git/my-notes/notes.org";
+exec sleep 17s && exec swaymsg "workspace 2; exec firefox --new-window http://149.28.231.154:8080/";
 
 # exec pulseaudio --daemon        # Not always necessary.
 
